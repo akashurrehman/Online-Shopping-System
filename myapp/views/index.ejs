@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%- include('./partials/heads'); %>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include('./partials/navbar'); %>
+   <div class="container-fluid jumbotron my-5 py-5 px-5 h-100">
+        <h1 class="pl-lg-4 mt-5 pt-5">
+            Online Shopping Website
+        </h1>
+        <h2 class="pl-lg-4 mt-2 pb-5">
+            Home/My Site
+        </h2>
+    </div>
+     <div class="container-fluid" id="cardset">
+      <div class="row">
+        <img src="/images/back-2.jpg" alt="Background Image" style="width: 100%;height: 50%;">
+      </div>
+      <div class="row pt-5 pb-5 bg-light">
+        <div class="col-12 pb-5">
+          <h2>Categories</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <div class="card w-100">
+              <div class="card-body">
+                <h5 class="card-title">Sesonal</h5>
+                <p class="card-text">Contain All seasonal Items</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="card w-100">
+              <div class="card-body">
+                <h5 class="card-title">Sunglass</h5>
+                <p class="card-text">ALL kinds of Glasses</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h5 class="card-title">Bags</h5>
+                  <p class="card-text">All kind of Bags</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="card w-100">
+              <div class="card-body">
+                <h5 class="card-title">Table Lamps</h5>
+                <p class="card-text">All veriety of Lamps</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    <%- include('./partials/footer'); %>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+        #picture {
+            background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/background.jpg');
+            height: auto;
+            width: auto;
+            background-position: cover;
+            background-size: auto;
+            color: aliceblue;
+        }
+        
+        .footer-06 .container-fluid {
+            background-color: #dadada;
+        }
+        
+        .footer-06 li a {
+            color: #7C7283;
+        }
+        
+        .footer-06 li a:hover {
+            color: #0071cc;
+        }
+        
+        #partners li {
+            list-style-type: decimal;
+        }
+        
+        #liststyle li {
+            list-style-type: decimal;
+        }
+        
+        #style .btn {
+            margin-left: 25%;
+            width: 35%;
+        }
+        
+        #position {
+            position: relative;
+        }
+        
+        #bacgroundimage {
+            background-image: url('./images/background3.jpg');
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-size: auto;
+            color: aliceblue;
+        }
+        
+        #movieposter {
+            background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/MoviesPoster.jpg');
+            height: auto;
+            width: auto;
+            background-position: auto;
+            background-size: auto;
+            color: aliceblue;
+            opacity: 80%;
+        }
+        
+        .card-img-wrap {
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .card-img-wrap:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.3);
+            opacity: 0;
+            transition: opacity .25s;
+        }
+        
+        .card-img-wrap img {
+            transition: transform .25s;
+            width: 100%;
+        }
+        
+        .card-img-wrap:hover img {
+            transform: scale(1.4);
+        }
+        
+        .card-img-wrap:hover:after {
+            opacity: 1;
+        }
+        
+        #eventposter {
+            background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/backgroundevent.jpg');
+            height: auto;
+            width: auto;
+            background-position: auto;
+            background-size: auto;
+            color: aliceblue;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        
+        #centered {
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        } 
+        #footer{
+          background-color: #0071cc;
+        }
+        #cardset .card{
+            width: 12em;
+            margin-left: 5em;
+            height: 10em;
+            background-color: #0071cc;
+            color: #fff;
+        }
+        #brand li{
+            margin-left: 2em;
+        }

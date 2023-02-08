@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <%- include('../views/partials/heads'); %>
+</head>
+<body>
+    <%- include('../views/partials/navbar'); %>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-6">
+                <h2>My Cart</h2>
+            </div>
+            <div class="col-6">
+                <a href="/products/add" class="btn btn-success float-right">Add New Product</a>
+            </div>
+        </div>                
+        <div class="row pt-5">
+        <% cart.forEach(function(item) { %>
+            <div class="col-lg-4 col-12">
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-body">  
+                        <h5 class="card-title">Product Name: <%= item.name %></h5>
+                            <p class="card-text">Product Price:  <%= item.price %></p>
+                            <p class="card-text">Product Manufacturing Date: <%= item.ManufacturingDate %></p>
+                                <div class="text-warning">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <a href="/products/cart/remove/<%= item._id %>" class="btn btn-warning pull-right">Remove Item</a>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+        </div>
+    </div>
+    <%- include('../views/partials/footer'); %>
+</body>
+</html>
